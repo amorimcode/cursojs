@@ -3,7 +3,7 @@ function load() {
     var img = window.document.getElementById('image')
     var data = new Date();
     var hour = data.getHours();
-    // var hour = 
+    //var hour = 
 
     if (hour == 1) {
 
