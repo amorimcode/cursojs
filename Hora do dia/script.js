@@ -3,7 +3,12 @@ function load() {
     var img = window.document.getElementById('image')
     var data = new Date();
     var hour = data.getHours();
-    
+    // var hour = 
+
+    if (hour == 1) {
+
+    }
+
     if (hour >= 0 && hour < 12) {
         // bom dia ! 
         img.src = 'dia.png'

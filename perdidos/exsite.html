@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+
+    <h1>Verifica se é estrangeiro</h1>
+    Digite seu país: <input type="text" name="nome" id="nome">
+    <input type="button" value="Verificar" onclick="verificar">
+    <div id='res'>
+
+    </div>
+    <script>
+        function verificar() {
+            var txtinput = document.getElementById('nome')
+            var nome = (txtinput.value)
+            var res = document.getElementById('res')
+            
+            console.log(nome)
+
+            if (nome == 'Brasil' || 'brasil' || 'Brazil' || 'brazil' ) {
+                res.innerHTML = 'Você é brasileiro!'
+                
+            }
+            
+            else {
+                res.innerHTML = 'Você é estrangeiro!'
+            }
+        
+
+        }
+
+
+    </script>
+</body>
+
+</html>
