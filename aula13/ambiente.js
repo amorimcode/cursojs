@@ -5,6 +5,6 @@ var c = 1;
 // }
 
 do {
-    console.log('solos rapidos');
-    c++
+    console.log(`solos rapidos ${c} `);
+    c += 2
 } while (c <= 6)
