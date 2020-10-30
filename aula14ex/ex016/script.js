@@ -12,20 +12,29 @@ function contar() {
         let f = Number(fim.value);
         let p = Number(passo.value);
 
-        if (i < f) {
-            for (let c = i; c <= f; c += p) {
-                res.innerHTML += `${c}`
-                if (c<f) {
-                    res.innerHTML += ', '
-                } else if (c >= f) {
-                    res.innerHTML += '.'
+        if (p <= 0 && p > f) {
+            window.alert('Passo inválido')
+        } else {
+            if (i < f) {
+                for (let c = i; c <= f; c += p) {
+                    res.innerHTML += `${c}`
+                    if (c < f) {
+                        res.innerHTML += ','
+                    } else if (c=f) {
+                        res.innerHTML += '.'
+
+                    }
+
+
+
                 }
+
+            } else for (let c = i; c >= f; c += p) {
+
             }
 
-        } else for (let c = i;c >= f; c+=p) {
 
         }
-
-
     }
 }
+
